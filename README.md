@@ -1,7 +1,5 @@
 # -Volumass-
 
-## A volume and density calculator
-
 ☉ Programming Language: C# <br>
 ☉ Framework: WinForms <br>
 ☉ Operating System: Windows <br>
