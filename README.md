@@ -4,6 +4,8 @@
 ☉ Framework: WinForms <br>
 ☉ Operating System: Windows <br>
 
+<i>"Volumass" is a program with which you can calculate the volumes of objects. It also allows you to make calculations such as density, mass.</i>
+
 ## Volumass Main Menu
 
 ![Volumass](https://user-images.githubusercontent.com/65850970/127037582-b7dca4b5-c4f9-4ea9-8cd1-58dda9d9044a.PNG)
