@@ -102,18 +102,6 @@
     <Compile Include="All Project\User Controls\Object User Controls\Rectangular_Tank_User_Control.Designer.cs">
       <DependentUpon>Rectangular_Tank_User_Control.cs</DependentUpon>
     </Compile>
-    <Compile Include="All Project\User Controls\Settings And Main Menu User Controls\Main_Menu_User_Control.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="All Project\User Controls\Settings And Main Menu User Controls\Main_Menu_User_Control.Designer.cs">
-      <DependentUpon>Main_Menu_User_Control.cs</DependentUpon>
-    </Compile>
-    <Compile Include="All Project\User Controls\Settings And Main Menu User Controls\Settings_User_Control.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="All Project\User Controls\Settings And Main Menu User Controls\Settings_User_Control.Designer.cs">
-      <DependentUpon>Settings_User_Control.cs</DependentUpon>
-    </Compile>
     <Compile Include="All Project\User Controls\Object User Controls\Sphere_User_Control.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -174,12 +162,6 @@
     <EmbeddedResource Include="All Project\User Controls\Object User Controls\Rectangular_Tank_User_Control.resx">
       <DependentUpon>Rectangular_Tank_User_Control.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="All Project\User Controls\Settings And Main Menu User Controls\Main_Menu_User_Control.resx">
-      <DependentUpon>Main_Menu_User_Control.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="All Project\User Controls\Settings And Main Menu User Controls\Settings_User_Control.resx">
-      <DependentUpon>Settings_User_Control.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="All Project\User Controls\Object User Controls\Sphere_User_Control.resx">
       <DependentUpon>Sphere_User_Control.cs</DependentUpon>
     </EmbeddedResource>
@@ -205,8 +187,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="All Project\Forms\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

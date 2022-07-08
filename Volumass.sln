@@ -5,8 +5,6 @@ VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Volumass", "Volumass.csproj", "{D89ACAF5-9D99-4316-B0FC-F2AFFDD66E08}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Volumass Project", "..\Volumass Project\Volumass Project.vdproj", "{35854F01-F387-4564-B5A8-AF900C2DFDC7}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,8 +15,6 @@ Global
 		{D89ACAF5-9D99-4316-B0FC-F2AFFDD66E08}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D89ACAF5-9D99-4316-B0FC-F2AFFDD66E08}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D89ACAF5-9D99-4316-B0FC-F2AFFDD66E08}.Release|Any CPU.Build.0 = Release|Any CPU
-		{35854F01-F387-4564-B5A8-AF900C2DFDC7}.Debug|Any CPU.ActiveCfg = Debug
-		{35854F01-F387-4564-B5A8-AF900C2DFDC7}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

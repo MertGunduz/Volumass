@@ -31,7 +31,6 @@ namespace Volumass
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Volumass_Main_Form));
             this.Main_Side_Panel = new System.Windows.Forms.Panel();
-            this.Settings_Button = new System.Windows.Forms.Button();
             this.SubPanel_Objects = new System.Windows.Forms.Panel();
             this.Tube_SubButton = new System.Windows.Forms.Button();
             this.Square_Pyramid_SubButton = new System.Windows.Forms.Button();
@@ -53,7 +52,6 @@ namespace Volumass
             this.Minimize_Button = new System.Windows.Forms.Button();
             this.Exit_Button = new System.Windows.Forms.Button();
             this.Main_Heading_Label = new System.Windows.Forms.Label();
-            this.main_Menu_User_Control1 = new Volumass.User_Controls.Settings_And_Main_Menu_User_Controls.Main_Menu_User_Control();
             this.sphere_User_Control1 = new Volumass.User_Controls.Sphere_User_Control();
             this.capsule_User_Control1 = new Volumass.User_Controls.Object_User_Controls.Capsule_User_Control();
             this.cone_User_Control1 = new Volumass.User_Controls.Object_User_Controls.Cone_User_Control();
@@ -65,7 +63,6 @@ namespace Volumass
             this.spherical_Cap_User_Control1 = new Volumass.User_Controls.Object_User_Controls.Spherical_Cap_User_Control();
             this.square_Pyramid_User_Control1 = new Volumass.User_Controls.Object_User_Controls.Square_Pyramid_User_Control();
             this.tube_User_Control1 = new Volumass.User_Controls.Object_User_Controls.Tube_User_Control();
-            this.settings_User_Control1 = new Volumass.User_Controls.Object_User_Controls.Settings_User_Control();
             this.Open_The_Mass_Calculator_Menu = new System.Windows.Forms.Button();
             this.Main_Side_Panel.SuspendLayout();
             this.SubPanel_Objects.SuspendLayout();
@@ -78,7 +75,6 @@ namespace Volumass
             // Main_Side_Panel
             // 
             this.Main_Side_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            this.Main_Side_Panel.Controls.Add(this.Settings_Button);
             this.Main_Side_Panel.Controls.Add(this.SubPanel_Objects);
             this.Main_Side_Panel.Controls.Add(this.Objects_Button);
             this.Main_Side_Panel.Controls.Add(this.panel3);
@@ -88,26 +84,6 @@ namespace Volumass
             this.Main_Side_Panel.Name = "Main_Side_Panel";
             this.Main_Side_Panel.Size = new System.Drawing.Size(153, 534);
             this.Main_Side_Panel.TabIndex = 0;
-            // 
-            // Settings_Button
-            // 
-            this.Settings_Button.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.Settings_Button.FlatAppearance.BorderSize = 0;
-            this.Settings_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Settings_Button.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Settings_Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(153)))), ((int)(((byte)(244)))));
-            this.Settings_Button.Image = ((System.Drawing.Image)(resources.GetObject("Settings_Button.Image")));
-            this.Settings_Button.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Settings_Button.Location = new System.Drawing.Point(0, 494);
-            this.Settings_Button.Name = "Settings_Button";
-            this.Settings_Button.Padding = new System.Windows.Forms.Padding(12, 0, 12, 0);
-            this.Settings_Button.Size = new System.Drawing.Size(153, 40);
-            this.Settings_Button.TabIndex = 4;
-            this.Settings_Button.Text = "Contact";
-            this.Settings_Button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Settings_Button.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.Settings_Button.UseVisualStyleBackColor = true;
-            this.Settings_Button.Click += new System.EventHandler(this.Settings_Button_Click);
             // 
             // SubPanel_Objects
             // 
@@ -125,7 +101,7 @@ namespace Volumass
             this.SubPanel_Objects.Dock = System.Windows.Forms.DockStyle.Top;
             this.SubPanel_Objects.Location = new System.Drawing.Point(0, 185);
             this.SubPanel_Objects.Name = "SubPanel_Objects";
-            this.SubPanel_Objects.Size = new System.Drawing.Size(153, 312);
+            this.SubPanel_Objects.Size = new System.Drawing.Size(153, 349);
             this.SubPanel_Objects.TabIndex = 3;
             // 
             // Tube_SubButton
@@ -310,6 +286,7 @@ namespace Volumass
             // 
             // Sphere_SubButton
             // 
+            this.Sphere_SubButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.Sphere_SubButton.Dock = System.Windows.Forms.DockStyle.Top;
             this.Sphere_SubButton.FlatAppearance.BorderSize = 0;
             this.Sphere_SubButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -323,7 +300,7 @@ namespace Volumass
             this.Sphere_SubButton.TabIndex = 4;
             this.Sphere_SubButton.Text = "Sphere";
             this.Sphere_SubButton.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.Sphere_SubButton.UseVisualStyleBackColor = true;
+            this.Sphere_SubButton.UseVisualStyleBackColor = false;
             this.Sphere_SubButton.Click += new System.EventHandler(this.Sphere_SubButton_Click);
             // 
             // Objects_Button
@@ -386,11 +363,12 @@ namespace Volumass
             // 
             // LogoPictureBox
             // 
+            this.LogoPictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LogoPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("LogoPictureBox.Image")));
-            this.LogoPictureBox.Location = new System.Drawing.Point(31, 10);
+            this.LogoPictureBox.Location = new System.Drawing.Point(0, 0);
             this.LogoPictureBox.Name = "LogoPictureBox";
-            this.LogoPictureBox.Size = new System.Drawing.Size(90, 90);
-            this.LogoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.LogoPictureBox.Size = new System.Drawing.Size(153, 110);
+            this.LogoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.LogoPictureBox.TabIndex = 0;
             this.LogoPictureBox.TabStop = false;
             // 
@@ -428,15 +406,6 @@ namespace Volumass
             this.Main_Heading_Label.Size = new System.Drawing.Size(127, 30);
             this.Main_Heading_Label.TabIndex = 3;
             this.Main_Heading_Label.Text = "Volumass";
-            // 
-            // main_Menu_User_Control1
-            // 
-            this.main_Menu_User_Control1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.main_Menu_User_Control1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.main_Menu_User_Control1.Location = new System.Drawing.Point(153, 110);
-            this.main_Menu_User_Control1.Name = "main_Menu_User_Control1";
-            this.main_Menu_User_Control1.Size = new System.Drawing.Size(637, 424);
-            this.main_Menu_User_Control1.TabIndex = 16;
             // 
             // sphere_User_Control1
             // 
@@ -528,16 +497,6 @@ namespace Volumass
             this.tube_User_Control1.Size = new System.Drawing.Size(637, 424);
             this.tube_User_Control1.TabIndex = 5;
             // 
-            // settings_User_Control1
-            // 
-            this.settings_User_Control1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            this.settings_User_Control1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.settings_User_Control1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.settings_User_Control1.Location = new System.Drawing.Point(153, 110);
-            this.settings_User_Control1.Name = "settings_User_Control1";
-            this.settings_User_Control1.Size = new System.Drawing.Size(637, 424);
-            this.settings_User_Control1.TabIndex = 4;
-            // 
             // Open_The_Mass_Calculator_Menu
             // 
             this.Open_The_Mass_Calculator_Menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
@@ -545,10 +504,10 @@ namespace Volumass
             this.Open_The_Mass_Calculator_Menu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Open_The_Mass_Calculator_Menu.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Open_The_Mass_Calculator_Menu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(153)))), ((int)(((byte)(244)))));
-            this.Open_The_Mass_Calculator_Menu.Location = new System.Drawing.Point(164, 70);
+            this.Open_The_Mass_Calculator_Menu.Location = new System.Drawing.Point(153, 70);
             this.Open_The_Mass_Calculator_Menu.Name = "Open_The_Mass_Calculator_Menu";
             this.Open_The_Mass_Calculator_Menu.Padding = new System.Windows.Forms.Padding(12, 0, 12, 0);
-            this.Open_The_Mass_Calculator_Menu.Size = new System.Drawing.Size(619, 40);
+            this.Open_The_Mass_Calculator_Menu.Size = new System.Drawing.Size(637, 40);
             this.Open_The_Mass_Calculator_Menu.TabIndex = 5;
             this.Open_The_Mass_Calculator_Menu.Text = "Open The Mass Calculator";
             this.Open_The_Mass_Calculator_Menu.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
@@ -561,7 +520,6 @@ namespace Volumass
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.ClientSize = new System.Drawing.Size(790, 534);
             this.Controls.Add(this.Open_The_Mass_Calculator_Menu);
-            this.Controls.Add(this.main_Menu_User_Control1);
             this.Controls.Add(this.sphere_User_Control1);
             this.Controls.Add(this.capsule_User_Control1);
             this.Controls.Add(this.cone_User_Control1);
@@ -573,7 +531,6 @@ namespace Volumass
             this.Controls.Add(this.spherical_Cap_User_Control1);
             this.Controls.Add(this.square_Pyramid_User_Control1);
             this.Controls.Add(this.tube_User_Control1);
-            this.Controls.Add(this.settings_User_Control1);
             this.Controls.Add(this.Main_Heading_Label);
             this.Controls.Add(this.Exit_Button);
             this.Controls.Add(this.Minimize_Button);
@@ -591,7 +548,6 @@ namespace Volumass
             this.Expand_Panel_Logo_Label.ResumeLayout(false);
             this.Expand_Panel_Logo_Label.PerformLayout();
             this.LogoPanel.ResumeLayout(false);
-            this.LogoPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LogoPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -619,11 +575,9 @@ namespace Volumass
         private System.Windows.Forms.Button Cylinder_SubButton;
         private System.Windows.Forms.Button Cube_SubButton;
         private System.Windows.Forms.Button Cone_SubButton;
-        private System.Windows.Forms.Button Settings_Button;
         private System.Windows.Forms.Button Minimize_Button;
         private System.Windows.Forms.Button Exit_Button;
         private System.Windows.Forms.Label Main_Heading_Label;
-        private User_Controls.Object_User_Controls.Settings_User_Control settings_User_Control1;
         private User_Controls.Object_User_Controls.Tube_User_Control tube_User_Control1;
         private User_Controls.Object_User_Controls.Square_Pyramid_User_Control square_Pyramid_User_Control1;
         private User_Controls.Object_User_Controls.Spherical_Cap_User_Control spherical_Cap_User_Control1;
@@ -635,7 +589,6 @@ namespace Volumass
         private User_Controls.Object_User_Controls.Cone_User_Control cone_User_Control1;
         private User_Controls.Object_User_Controls.Capsule_User_Control capsule_User_Control1;
         private User_Controls.Sphere_User_Control sphere_User_Control1;
-        private User_Controls.Settings_And_Main_Menu_User_Controls.Main_Menu_User_Control main_Menu_User_Control1;
         private System.Windows.Forms.Button Open_The_Mass_Calculator_Menu;
     }
 }

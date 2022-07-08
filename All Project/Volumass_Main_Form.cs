@@ -21,6 +21,7 @@ namespace Volumass
         {
             SubPanel_Objects.Visible = false;
             Main_Heading_Label.Text = "Volumass";
+            Sphere_SubButton.BackColor = Color.FromArgb(46, 51, 73);
         }
 
         private void Objects_Button_Click(object sender, EventArgs e)
@@ -29,58 +30,23 @@ namespace Volumass
             if (Objects_Button.BackColor == Color.FromArgb(24, 30, 54))
             {
                 Objects_Button.BackColor = Color.FromArgb(46, 51, 73);
-                Settings_Button.BackColor = Color.FromArgb(24, 30, 54);
             }
             else if (Objects_Button.BackColor == Color.FromArgb(46, 51, 73))
             {
                 Objects_Button.BackColor = Color.FromArgb(24, 30, 54);
-                Settings_Button.BackColor = Color.FromArgb(24, 30, 54);
             }
 
             // Subpanel Opening & Closing
             if (SubPanel_Objects.Visible == true)
             {
                 SubPanel_Objects.Visible = false;
-                Main_Heading_Label.Text = "";
-                Sphere_SubButton.BackColor = Color.FromArgb(24, 30, 54);
-                Cone_SubButton.BackColor = Color.FromArgb(24, 30, 54);
-                Cube_SubButton.BackColor = Color.FromArgb(24, 30, 54);
-                Cylinder_SubButton.BackColor = Color.FromArgb(24, 30, 54);
-                RectangularTank_SubButton.BackColor = Color.FromArgb(24, 30, 54);
-                Capusle_SubButton.BackColor = Color.FromArgb(24, 30, 54);
-                SphericalCap_SubButton.BackColor = Color.FromArgb(24, 30, 54);
-                ConicalFrustum_SubButton.BackColor = Color.FromArgb(24, 30, 54);
-                Ellipsoid_SubButton.BackColor = Color.FromArgb(24, 30, 54);
-                Square_Pyramid_SubButton.BackColor = Color.FromArgb(24, 30, 54);
-                Tube_SubButton.BackColor = Color.FromArgb(24, 30, 54);
-                main_Menu_User_Control1.BringToFront();
                 Main_Heading_Label.Text = "Volumass";
             }
             else if (SubPanel_Objects.Visible == false)
             {
                 Main_Heading_Label.Text = "Objects";
                 SubPanel_Objects.Visible = true;
-                Sphere_SubButton.BackColor = Color.FromArgb(24, 30, 54);
-                Cone_SubButton.BackColor = Color.FromArgb(24, 30, 54);
-                Cube_SubButton.BackColor = Color.FromArgb(24, 30, 54);
-                Cylinder_SubButton.BackColor = Color.FromArgb(24, 30, 54);
-                RectangularTank_SubButton.BackColor = Color.FromArgb(24, 30, 54);
-                Capusle_SubButton.BackColor = Color.FromArgb(24, 30, 54);
-                SphericalCap_SubButton.BackColor = Color.FromArgb(24, 30, 54);
-                ConicalFrustum_SubButton.BackColor = Color.FromArgb(24, 30, 54);
-                Ellipsoid_SubButton.BackColor = Color.FromArgb(24, 30, 54);
-                Square_Pyramid_SubButton.BackColor = Color.FromArgb(24, 30, 54);
-                Tube_SubButton.BackColor = Color.FromArgb(24, 30, 54);
             }
-        }
-
-        private void Settings_Button_Click(object sender, EventArgs e)
-        {
-            // Color Changing
-            Objects_Button.BackColor = Color.FromArgb(24, 30, 54);
-            Settings_Button.BackColor = Color.FromArgb(46, 51, 73);
-            Main_Heading_Label.Text = "Settings";
-            settings_User_Control1.BringToFront();
         }
 
         private void Minimize_Button_Click(object sender, EventArgs e)
