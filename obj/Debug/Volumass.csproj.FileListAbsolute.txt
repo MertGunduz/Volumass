@@ -1,6 +1,5 @@
 C:\Users\u\source\repos\Volumass\bin\Debug\Volumass.exe.config
 C:\Users\u\source\repos\Volumass\bin\Debug\Volumass.exe
-C:\Users\u\source\repos\Volumass\bin\Debug\Volumass.pdb
 C:\Users\u\source\repos\Volumass\obj\Debug\Volumass.Forms.Mass_Calculation_Form.resources
 C:\Users\u\source\repos\Volumass\obj\Debug\Volumass.Volumass_Main_Form.resources
 C:\Users\u\source\repos\Volumass\obj\Debug\Volumass.Properties.Resources.resources
@@ -19,3 +18,5 @@ C:\Users\u\source\repos\Volumass\obj\Debug\Volumass.csproj.GenerateResource.cach
 C:\Users\u\source\repos\Volumass\obj\Debug\Volumass.csproj.CoreCompileInputs.cache
 C:\Users\u\source\repos\Volumass\obj\Debug\Volumass.exe
 C:\Users\u\source\repos\Volumass\obj\Debug\Volumass.pdb
+C:\Users\u\source\repos\Volumass\bin\Debug\Volumass.pdb
+C:\Users\u\source\repos\Volumass\obj\Debug\Volumass.csproj.AssemblyReference.cache
